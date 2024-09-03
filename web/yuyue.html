@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/dingzhi.css">
+    <script src="./js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      background-color: #337ab7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+<body>
+    <div class="j-bigblock">
+        <div class="s-header whitebackground">
+            <div class="s-first-header blackline">
+                <div><img src="img/biaozhi.png" /><span class="blackfont">红色青年行</span><i class="blackfont">—</i><span
+                    class="blackfont">助力青少年红旅研学的领航者</span></div>
+            <div>
+                    <span class="data-time blackfont">2023-5-13</span>
+                    <span class="blackfont xingqi">星期四</span>
+
+                </div>
+            </div>
+            <div class="s-second-header">
+                <ul>
+                    <li><span class="blackfont"><a href="index.html">首页</a></span></li>
+                    <li><span class="blackfont"><a href="./guanyu.html">关于我们</a></span></li>
+                    <li><span class="blackfont"><a href="./chanpin.html">红色景点</a></span></li>
+                    <li><span class="blackfont"><a href="./dingzhi.html">红色路线</a></span></li>
+                    <li><span class="blackfont"><a href="./wenchuang.html">红色文创</a></span></li>
+                    <li class="boder-line"><span class="blackfont"><a href="./yuyue.html">在线预约</a></span></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="container">
+            <h1>红色研学项目预约</h1>
+            <form>
+              <div class="form-group">
+                <label for="project">选择项目:</label>
+                <select id="project">
+                  <option value="project1">北京市平谷区鱼子山村“走进红色抗日烈焰”</option>
+                  <option value="project2">红色项目2</option>
+                  <option value="project3">红色项目3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">选择日期:</label>
+                <input type="date" id="date">
+              </div>
+              <div class="form-group">
+                <label for="participants">参与人数:</label>
+                <input type="number" id="participants" min="1" max="100">
+              </div>
+              <div class="form-group">
+                <button type="submit">提交预约</button>
+              </div>
+            </form>
+          </div>
+        </body>
+    </div>
+
+</body>
+
+</html>

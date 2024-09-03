@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    .big_box {
+        display: flex;
+    }
+
+    .left_daohang {
+        width: 20%;
+        height: 100vh;
+        min-width: 260px;
+        /* 设置最小宽度防止文字被压缩 */
+        background-color: #dbcaca2d;
+        overflow: auto;
+    }
+
+    .item1 {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .item1:hover {
+        background-color: #dca7ae4a;
+    }
+
+    .item1_text {
+        font-size: 22px;
+        color: rgb(82, 79, 79);
+        overflow: hidden;
+        /*超出隐藏*/
+        text-overflow: ellipsis;
+        /*省略号*/
+        white-space: nowrap;
+        /*设置文本不换行*/
+    }
+
+    .item1_img {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        margin: auto 20px;
+    }
+
+    .item1_item2 {
+        cursor: pointer;
+        display: none;
+    }
+
+    .item2 {
+        margin: 20px auto;
+    }
+
+    .item2:hover {
+        background-color: #15305a;
+    }
+
+    .item2_text {
+        font-size: 20px;
+        color: rgb(91, 87, 86);
+        margin-left: 25%;
+        text-align: center;
+    }
+
+    .content {
+        width: 80%;
+        height: 100vh;
+        background-color: #cccccc;
+        overflow: auto;
+    }
+</style>
+
+<body>
+    <div class="j-bigblock">
+        <div class="s-header whitebackground">
+            <div class="s-first-header blackline">
+                <div><img src="img/biaozhi.png" /><span class="blackfont">红色青年行</span><i class="blackfont">—</i><span
+                        class="blackfont">助力青少年红旅研学的领航者</span></div>
+                <div>
+                    <span class="data-time blackfont">2023-5-13</span>
+                    <span class="blackfont xingqi">星期四</span>
+
+                </div>
+            </div>
+            <div class="s-second-header">
+                <ul>
+                    <li><span class="blackfont"><a href="index.html">首页</a></span></li>
+                    <li class="boder-line"><span class="blackfont"><a href="./guanyu.html">关于我们</a></span></li>
+                    <li><span class="blackfont"><a href="./chanpin.html">红色景点</a></span></li>
+                    <li><span class="blackfont"><a href="./dingzhi.html">红色路线</a></span></li>
+                    <li><span class="blackfont"><a href="./wenchuang.html">红色文创</a></span></li>
+                    <li><span class="blackfont"><a href="./yuyue.html">在线预约</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="j-content-block">
+            <div class="big_box">
+                <div class="left_daohang">
+                    <!-- 第一块：一级标题1 -->
+                    <div class="item1 qubie1" name='1'>
+                        <div class="item1_img1 item1_img"></div>
+                        <span class="item1_text">企业简介</span>
+                        <div class="you item1_img"></div>
+                    </div>
+                    <div class="item1_item2">
+                    </div>
+
+                    <!-- 第1.5块：临时插入无二级标题 -->
+                    <div class="item1 qubie2">
+                        <div class="item1_img4 item1_img"></div>
+                        <span class="item1_text">组织概况</span>
+                        <div class="you item1_img"></div>
+                    </div>
+                    <div class="item1_item2">
+                        <!-- 	这部分不能删 -->
+                    </div>
+
+                    <!-- 第二块：一级标题2 -->
+                    <div class="item1 qubie3">
+                        <div class="item1_img2 item1_img"></div>
+                        <span class="item1_text">组织成员</span>
+                        <div class="you item1_img"></div>
+                    </div>
+                    <div class="item1_item2">
+                    </div>
+
+                    <!-- 第三块：一级标题3 -->
+                    <div class="item1 qubie4">
+                        <div class="item1_img3 item1_img"></div>
+                        <span class="item1_text">隐私说明</span>
+                        <div class="you item1_img"></div>
+                    </div>
+                    <div class="item1_item2 qubie5">
+                        <div class="item2">
+                            <span class="item2_text">隐私政策</span>
+                        </div>
+                        <div class="item2 qubie6">
+                            <span class="item2_text">版权说明</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content"  style="
+                    font-size: 20px;
+                    font-family: Georgia, serif;
+                    color: #333333;
+                    text-indent: 3em;
+                    padding-top: 20px;
+                    padding-left: 40px;
+                    padding-right: 40px;">
+                    企业简介企业名“红色青年行”是由项目内容简写而来，意味着带领广大青少年深入红色乡村，体悟红色文化。祖国之苗在红色乡野中生长前行，既是一条个体的成长之路，也是一条中国的乡村振兴之路。企业的基本模式是为拥有红色资源的乡村打造青少年红旅研学产品，对接有研学需求的中小学校，同时召集优秀大学生志愿者，携手愿意为中国特色社会主义事业贡献力量的人群，与多类主体合作，在乡村开展素质培育项目。新时代青年发挥引领作用的同时，促进孩子心智培育，配合推进双减政策，辅助义务教育，产生社会效益，助力国家的乡村振兴。在企业模式中，愿意为中国特色社会主义事业贡献力量的人群包括有理想有道德的志愿者，当地的扶贫人员，地方民俗工作者，村支书，回乡发展的大学生、创业者等；多类主体包括乡村原住民、政府、学校、素质培育机构、公益组织。
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+
+                    for (let i = 0; i < $('.item1').length; i++) {
+                        if ($('.item1_item2')[i].children.length == 0) {
+                            $('.item1')[i].children[2].className = 'item1_img'
+                        }
+                    }//遍历一级标题，如果二级标题为空则不显示图标
+
+                    $('.qubie1').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<p>企业名“红色青年行”是由项目内容简写而来，意味着带领广大青少年深入红色乡村，体悟红色文化。祖国之苗在红色乡野中生长前行，既是一条个体的成长之路，也是一条中国的乡村振兴之路。企业的基本模式是为拥有红色资源的乡村打造青少年红旅研学产品，对接有研学需求的中小学校，同时召集优秀大学生志愿者，携手愿意为中国特色社会主义事业贡献力量的人群，与多类主体合作，在乡村开展素质培育项目。新时代青年发挥引领作用的同时，促进孩子心智培育，配合推进双减政策，辅助义务教育，产生社会效益，助力国家的乡村振兴。在企业模式中，愿意为中国特色社会主义事业贡献力量的人群包括有理想有道德的志愿者，当地的扶贫人员，地方民俗工作者，村支书，回乡发展的大学生、创业者等；多类主体包括乡村原住民、政府、学校、素质培育机构、公益组织。</p>').css({
+                                'font-size': '20px',
+                                'font-family': 'Georgia, serif',
+                                'color': '#333333',
+                                'text-indent': '3em',
+                                'padding-top': '20px',
+                                'padding-left': '40px',
+                                'padding-right': '40px'
+                            });
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+
+                    $('.qubie2').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<p>“红色青年行”研学社成立于 2023 年，注册资本 100 万元。公司专注于红色研学项目开发与规划，通过设计红色研学路线、制定红色研学套餐，为北京市中小学生校园师生提供优质红色研学服务，以研学带动红色革命教育。同时，公司积极开发 APP、网站等社交媒体平台用以宣传红色文化景点的红色历史并推广红色文创、红色文化景点口述史等，吸纳志愿者参与到红色研学项目服务中，充分发挥项目的社会效益。公司以红色旅游模式扩大红色文化景点知名度，提升红色文化影响力，从而引领一种“教育、文化、红色、体验”的红色旅游模式，以响应党和国家政策号召，助力红色旅游可持续发展，推动乡村振兴蓬勃发展。</p>').css({
+                                'font-size': '20px',
+                                'font-family': 'Georgia, serif',
+                                'color': '#333333',
+                                'text-indent': '3em',
+                                'padding-top': '20px',
+                                'padding-left': '40px',
+                                'padding-right': '40px'
+                            });
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+
+                    $('.qubie3').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<table style="font-size: 15px; font-family: Georgia, serif; color: #333333; border-collapse: collapse; width: 100%;">' +
+                                '<tr style="background-color: #f2f2f2;">' +
+                                '<th style="padding: 10px; text-align: center;">序号</th>' +
+                                '<th style="padding: 10px; text-align: center;">姓名</th>' +
+                                '<th style="padding: 10px; text-align: center;">职务</th>' +
+                                '<th style="padding: 10px; text-align: center;">分工与责任</th>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">1</td>' +
+                                '<td style="padding: 10px; text-align: center;">A</td>' +
+                                '<td style="padding: 10px; text-align: center;">理事会会长</td>' +
+                                '<td style="padding: 10px; text-align: center;">负责组织整体规划战略的制定；确定组织架构，统筹各部门的经营管理和运作方案；' + '<br>' + '主持组织的全面工作，代表组织出席重要场合、签署重要文件等</td>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">2</td>' +
+                                '<td style="padding: 10px; text-align: center;">B</td>' +
+                                '<td style="padding: 10px; text-align: center;">理事会理事长</td>' +
+                                '<td style="padding: 10px; text-align: center;">负责组织各项日常事务的管理和各项工作的开展；把握组织的运行方式和发展方向；' + '<br>' + '协调内部成员关系，促进组织稳定和谐发展；对其他干部及干事进行监督并对协会负责</td>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">3</td>' +
+                                '<td style="padding: 10px; text-align: center;">C</td>' +
+                                '<td style="padding: 10px; text-align: center;">总干事助理</td>' +
+                                '<td style="padding: 10px; text-align: center;">在总干事领导下负责组织具体管理工作的布置、实施、检查、督促、落实执行情况；' + '<br>' + '协助总干事做好调查研究、会议记录等工作</td>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">4</td>' +
+                                '<td style="padding: 10px; text-align: center;">D</td>' +
+                                '<td style="padding: 10px; text-align: center;">研究开发组负责人</td>' +
+                                '<td style="padding: 10px; text-align: center;">负责市场调研与信息收集，了解市场最新动态；' + '<br>' + '设计和制定研学项目路线、内容、红色故事和文创产品；创新产品设计理念和生产技术</td>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">5</td>' +
+                                '<td style="padding: 10px; text-align: center;">E</td>' +
+                                '<td style="padding: 10px; text-align: center;">研究开发组负责人</td>' +
+                                '<td style="padding: 10px; text-align: center;">负责制定公司网页的设计方案，包括网页结构、布局和功能设计；' + '<br>' + '负责生产作业计划的平衡、编制和执行工作；负责生产完成的统计和分析工作</td>' +
+                                '</tr>' +
+                                '<tr>' +
+                                '<td style="padding: 10px; text-align: center;">6</td>' +
+                                '<td style="padding: 10px; text-align: center;">F</td>' +
+                                '<td style="padding: 10px; text-align: center;">研究开发组负责人</td>' +
+                                '<td style="padding: 10px; text-align: center;">负责开发和维护公司网页，确保网页的正常运行和用户体验；收集用户反馈意见；' + '<br>' + '进行网页功能改进和优化，并及时修复漏洞，确保用户隐私和安全</td>' +
+                                '</tr>' +
+                                '</table>');
+
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+
+                })
+
+
+                $('.qubie4').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<p></p>').css({
+                                'font-size': '20px',
+                                'font-family': 'Georgia, serif',
+                                'color': '#333333',
+                                'text-indent': '3em',
+                                'padding-top': '20px',
+                                'padding-left': '40px',
+                                'padding-right': '40px'
+                            });
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+
+                    $('.qubie5').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<p></p>').css({
+                                'font-size': '20px',
+                                'font-family': 'Georgia, serif',
+                                'color': '#333333',
+                                'text-indent': '3em',
+                                'padding-top': '20px',
+                                'padding-left': '40px',
+                                'padding-right': '40px'
+                            });
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+
+
+                    $('.qubie6').click(
+                        function (val) {
+                            console.log($(this).children()[1].innerText);//点击一级标题，打印点击的栏目
+                            $('.content').html($(this).children()[1].innerText);//在内容页显示点击的按钮文字
+                            // 在这里添加显示标题下内容的代码
+                            // 可以根据需要，通过ajax请求加载内容或者直接在前端定义内容并显示
+                            // 示例：
+                            $('.content').html('<p></p>').css({
+                                'font-size': '20px',
+                                'font-family': 'Georgia, serif',
+                                'color': '#333333',
+                                'text-indent': '3em',
+                                'padding-top': '20px',
+                                'padding-left': '40px',
+                                'padding-right': '40px'
+                            });
+                            if ($(this).next().is(":hidden")) {//如果二级导航没打开，打开它
+                                $(this).next().show(500);
+                                $(this).children('.you').css('transform', 'rotate(90deg)');//图片旋转90度
+                            }
+                            else if ($(this).next().children().length == 0) { }//如果没有二级导航，没操作
+                            else {//如果二级导航打开了，关闭它
+                                $(this).next().hide(500)
+                                $('.you').css('transform', 'rotate(0deg)');//图片回到原来样子
+                            }
+                        }
+                    );
+            </script>
+</body>
+
+</html>
